@@ -45,3 +45,12 @@ d3.json("https://raw.githubusercontent.com/raul27868/07MBIG-Visualizacion-Activi
     {"year": 1991, "name":"delta2", "value": 17},
     {"year": 1992, "name":"delta2", "value": 35}
   ]
+
+var visualization = d3plus.viz()
+  .container("#viz3")
+  .data(data2)
+  .type("box")
+  .id("name")
+  .x("year")
+  .y("value")
+  .draw()
